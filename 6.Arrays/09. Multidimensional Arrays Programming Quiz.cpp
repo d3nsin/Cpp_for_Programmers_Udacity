@@ -46,6 +46,7 @@ int main()
         product[i] = sum;
     }
 
+    // Print out the product 
     for(int i=0; i<n; i++)
     {
         cout<<product[i]<<" ";
