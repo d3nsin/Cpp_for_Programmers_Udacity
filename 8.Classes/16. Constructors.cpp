@@ -56,14 +56,19 @@ int Cats::getAge()
 }
 void Cats::printInfo()
 {
-    cout<<name<<" "<<breed<<" "<<age;
+    cout<<name<<" "<<breed<<" "<<age<<"\n";
 }
 
 //+++++++
 int main()
 {
     Cats cat1;
-    cout<<"Cat1 information: ";
+    cout<<"Cat1 default information: ";
+    cat1.printInfo();
+    cat1.setName("Gizmo");
+    cat1.setBreed("Sphynx");
+    cat1.setAge(12);
+    cout<<"Cat1 updated information: ";
     cat1.printInfo();
     return 0;
 }
